@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monisha — Beach, Coffee & Good Conversations</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:#29343a;
+  background:linear-gradient(145deg,#dff4f7 0%,#b9dfe8 50%,#8fc5d3 100%);
+}
+.wrap{max-width:900px;margin:auto;padding:22px 16px 60px}
+.card{
+  background:rgba(255,255,255,.88);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(61,87,91,.10);
+  border-radius:30px;
+  box-shadow:0 18px 55px rgba(49,77,80,.10);
+  padding:30px;
+  margin:18px 0;
+}
+.hero{
+  text-align:center;
+  padding:58px 24px 50px;
+  background:
+    linear-gradient(rgba(255,255,255,.72),rgba(255,255,255,.72)),
+    linear-gradient(135deg,#dff6f2,#fff1dc);
+}
+.badge{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  background:#fff5df;
+  color:#80633e;
+  font-size:13px;
+  font-weight:750;
+  letter-spacing:.5px;
+}
+.opening{font-size:70px;margin:14px 0 4px}
+h1{font-size:clamp(42px,8vw,72px);line-height:.95;margin:12px 0}
+h2{font-size:30px;margin:0 0 10px;color:#29464a}
+p{font-size:17px;line-height:1.72}
+.muted{opacity:.62}
+.big{font-size:22px;line-height:1.55}
+.timeline{display:grid;gap:13px;margin-top:20px}
+.step{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:18px;
+  border-radius:20px;
+  background:rgba(246,250,248,.9);
+}
+.icon{font-size:30px;min-width:42px;text-align:center}
+.step strong{display:block;font-size:17px;color:#2f4a4e}
+.step span{display:block;font-size:14px;opacity:.68;margin-top:3px}
+.talent-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:13px;
+  margin-top:20px;
+}
+.talent{
+  padding:21px;
+  border-radius:22px;
+  background:linear-gradient(135deg,#fffaf1,#eef8f6);
+}
+.talent b{display:block;font-size:18px;margin-bottom:6px}
+.talent span{font-size:14px;opacity:.68;line-height:1.5}
+.beach{
+  text-align:center;
+  background:
+    linear-gradient(rgba(255,250,240,.76),rgba(255,250,240,.76)),
+    linear-gradient(135deg,#d9f4f1,#ffe7c4);
+}
+.quote{font-size:24px;font-weight:750;line-height:1.5;color:#36565a}
+.flirty{
+  text-align:center;
+  background:linear-gradient(135deg,#fff3df,#eaf8f5);
+}
+.pill-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:20px 0}
+.pill{
+  padding:10px 15px;
+  border-radius:999px;
+  background:rgba(255,255,255,.88);
+  font-weight:700;
+  color:#536a6d;
+}
+button{
+  border:0;
+  border-radius:999px;
+  padding:15px 26px;
+  background:#315a5d;
+  color:#fff;
+  font-size:17px;
+  font-weight:750;
+  cursor:pointer;
+  box-shadow:0 9px 25px rgba(49,90,93,.22);
+  transition:.2s ease;
+}
+button:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(49,90,93,.28)}
+#reveal{display:none;margin-top:22px}
+footer{text-align:center;opacity:.48;font-size:13px;margin-top:25px}
+@media(max-width:600px){
+  .talent-grid{grid-template-columns:1fr}
+  .hero{padding:45px 18px}
+  .card{padding:24px}
+}
+</style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0GBNP1HHSB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0GBNP1HHSB');
+</script>
+
+</head>
+<body>
+<div class="wrap">
+
+<section class="card hero">
+  <div class="badge">A slightly unnecessary investigation into one interesting person</div>
+  <div class="opening">🐱</div>
+  <h1>Hey, Monisha</h1>
+  <p class="big">I realised I've only met a few versions of you so far...</p>
+  <p class="muted">And honestly, I'm a little curious about the versions I haven't discovered yet.</p>
+</section>
+
+<section class="card">
+  <h2>The Monisha versions I've discovered so far</h2>
+  <p>There seems to be more than one version of you, and I'm slowly getting introduced to each one.</p>
+
+  <div class="timeline">
+    <div class="step">
+      <div class="icon">💼</div>
+      <div>
+        <strong>Professional Monisha</strong>
+        <span>LinkedIn Monisha — very polished, very responsible, definitely intimidating.</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="icon">💛</div>
+      <div>
+        <strong>Bumble Monisha</strong>
+        <span>The version I'm currently getting to know... and I'm enjoying this one.</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="icon">🎶</div>
+      <div>
+        <strong>Singer Monisha?</strong>
+        <span>Okay, this version needs more investigation. How good are we talking?</span>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="icon">☕</div>
+      <div>
+        <strong>Offline Monisha</strong>
+        <span>The version I actually want to meet — preferably over coffee, pizza and a long conversation.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>But what other hidden talents are you hiding?</h2>
+  <p>I have a feeling the LinkedIn profile and Bumble profile aren't giving me the full story.</p>
+
+  <div class="talent-grid">
+    <div class="talent">
+      <b>🎤 Singer?</b>
+      <span>Already suspicious that there is a secret playlist waiting to be discovered.</span>
+    </div>
+    <div class="talent">
+      <b>🍕 Food critic?</b>
+      <span>Important information. Especially if pizza is involved.</span>
+    </div>
+    <div class="talent">
+      <b>😂 Professional teaser?</b>
+      <span>Because I'm going to need to know how much trouble I'm getting myself into.</span>
+    </div>
+    <div class="talent">
+      <b>✨ Something unexpected?</b>
+      <span>Probably. You can reveal this one yourself.</span>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="card flirty">
+  <h2>Maybe we don't have to rush it...</h2>
+  <p class="quote">“Maybe we get to know each other a little better first... and then coffee?” ☕</p>
+  <p>
+    We can take it naturally, have a good conversation, see if we enjoy each other's company —
+    and decide the rest after that. 😌
+  </p>
+</section>
+
+
+
+<section class="card" style="text-align:center">
+  <button id="inviteButton" type="button" onclick="
+    document.getElementById('reveal').style.display='block';
+    this.style.display='none';
+    if (typeof gtag === 'function') {
+      gtag('event','invitation_click',{event_category:'engagement',event_label:'getting_to_know_invitation'});
+    }
+  ">Let's see where this goes →</button>
+
+  <div id="reveal" style="display:none">
+    <p class="quote">Sounds like a plan. ☕😌</p>
+    <p>I'll bring the Chennai-paiyan energy, you bring the Kongu-ponnu charm. 😌</p>
+  </div>
+</section>
+
+<footer>Made with coffee, curiosity, and slightly questionable levels of effort.</footer>
+</div>
+</body>
+</html>
